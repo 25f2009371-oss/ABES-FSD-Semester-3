@@ -19,11 +19,19 @@ fs.read
 
 fs.unlinkSync
 
-
+*/
 
 fs.mkdirSync('sample folder')
 console.log('new folder')
-*/
 
-fs.rmdirSync('sample folder')
+
+fs.rmdirSync('Fake')
 console.log('deleted folder')
+
+
+if(fs.existsSync('secastudent.txt')){
+    console.log('file exist')
+}
+else{
+    console.log('file not found, need to create this file');
+}
