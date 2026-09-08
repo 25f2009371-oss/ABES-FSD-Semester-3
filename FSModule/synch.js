@@ -19,7 +19,11 @@ fs.read
 
 fs.unlinkSync
 
-*/
+
 
 fs.mkdirSync('sample folder')
 console.log('new folder')
+*/
+
+fs.rmdirSync('sample folder')
+console.log('deleted folder')
