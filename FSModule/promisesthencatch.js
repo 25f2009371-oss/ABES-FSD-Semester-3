@@ -1,0 +1,17 @@
+const fs = require('fs').promises;
+
+async function writeFile(){
+
+try{
+await fs.writeFile("promise.txt","Hello students");
+
+console.log("File created and data written succeffully")
+}
+
+catch(error){
+    console.log("Error: ",error)
+}
+
+}
+
+writeFile();
