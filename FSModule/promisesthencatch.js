@@ -15,3 +15,21 @@ catch(error){
 }
 
 writeFile();
+
+
+async function readFile() {
+    try{
+const data=await fs.readFile("promise.txt","utf-8")
+console.log("file content: ",data)
+
+    }
+
+catch (error){
+    console.log("Error",error);
+}
+
+
+
+
+}
+readFile()
