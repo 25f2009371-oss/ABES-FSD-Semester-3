@@ -33,3 +33,27 @@ catch (error){
 
 }
 readFile()
+
+
+
+
+
+
+async function renamefile(params) {
+    
+try{
+await fs.rename('promise.txt','promise_new.txt');
+console.log("file renamed succefully")
+
+}
+
+catch(err){
+    console.log("Error: ",err)
+}
+
+
+
+}
+
+renamefile()
+
