@@ -26,8 +26,38 @@ fs.readFile('sample.txt', 'utf-8', (err, data) => {
                         return;
                     }
                     console.log('Updated File content:', updatedData);
+
+fs.writeFile('example.txt', "Welcome to FSD", (err) => {
+    if (err) {
+        console.log('Error creating a file', err);
+        return;
+    }
+    console.log('Example File created successfully');
+
+fs.unlink('example.txt',(err)=>{
+
+if(err){
+    console.error('Error deleting file: ',err)
+}
+
+else{
+    console.log('Example file deleted succefully');
+}
+
+});
+
+
+});
+
+
                 });
             }
         });
     });
 });
+
+
+
+
+
+
