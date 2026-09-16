@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %} Quiz-1 {% endblock %}
+
+{% block content %}
+<div class="cntr" style="border: 1px solid black; height: 800px; width: 1400px; margin:0 auto; display:flex; justify-content:center; align-items:center;">
+    <div class="incntr" style="border: 1px solid blue; height: 600px; width: 1000px; margin:0 auto; align-items: center; overflow-y: auto;">
+        
+        <br><br>
+
+        {% block question %}
+            <p>
+                Which layer of Earth's atmosphere contains the ozone layer, 
+                which absorbs the majority of the Sun's harmful ultraviolet radiation?
+            </p>
+        {% endblock %}
+
+        {% block options %}
+            <ul>
+                <li>Troposphere</li>
+                <li>Stratosphere</li>
+                <li>Mesosphere</li>
+                <li>Thermosphere</li>
+            </ul>
+        {% endblock %}
+
+        {% block next %}
+            <form action="/submit" method="post">
+                <input type="submit" value="Submit">
+            </form>
+        {% endblock %}
+    </div>
+</div>
+{% endblock %}
