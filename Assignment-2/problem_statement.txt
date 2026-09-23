@@ -1,0 +1,8 @@
+Student Activity Monitoring system/using event emmmiter modile
+
+assignment loop, node js
+events loop event handling 
+1. Create the events 
+login display: student logged succefully assignment 
+deploy assignment submitted logout deploy assignment 
+submitted logout display student logout  out exit display existing application
